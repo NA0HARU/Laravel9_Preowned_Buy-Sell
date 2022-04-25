@@ -32,7 +32,8 @@ Route::get('/test',[HomeController::class,'test'])->name('test');
 Route::get('/param/{id}/{number}',[HomeController::class,'param'])->name('param');
 
 
-// 6- aaaaa
+// 6- lşkajsdflkjasdfajlskdfaş
+
 
 Route::post('/save',[HomeController::class,'save'])->name('save');
 
