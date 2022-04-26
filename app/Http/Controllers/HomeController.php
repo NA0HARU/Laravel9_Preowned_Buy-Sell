@@ -8,7 +8,8 @@ class HomeController extends Controller
 {
     //
     public function index(){
-        echo "Index Funtion";
+        //echo "Index Funtion";
+        return view('home.index');
 }
     public function test(){
         return view('home.test');
