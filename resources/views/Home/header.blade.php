@@ -8,7 +8,7 @@
 <div class="humberger__menu__overlay"></div>
 <div class="humberger__menu__wrapper">
     <div class="humberger__menu__logo">
-        <a href="#"><img src="assets/img/logo.png" alt=""></a>
+        <a href="#"><img src="{{asset('assets')}}img/logo.png" alt=""></a>
     </div>
     <div class="humberger__menu__cart">
         <ul>
@@ -19,7 +19,7 @@
     </div>
     <div class="humberger__menu__widget">
         <div class="header__top__right__language">
-            <img src="assets/img/language.png" alt="">
+            <img src="{{asset('assets')}}img/language.png" alt="">
             <div>English</div>
             <span class="arrow_carrot-down"></span>
             <ul>
@@ -85,7 +85,7 @@
                             <a href="#"><i class="fa fa-pinterest-p"></i></a>
                         </div>
                         <div class="header__top__right__language">
-                            <img src="assets/img/language.png" alt="">
+                            <img src="{{asset('assets')}}img/language.png" alt="">
                             <div>English</div>
                             <span class="arrow_carrot-down"></span>
                             <ul>
@@ -105,7 +105,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="./index.html"><img src="assets/img/logo.png" alt=""></a>
+                    <a href="./index.html"><img src="{{asset('assets')}}img/logo.png" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-6">
