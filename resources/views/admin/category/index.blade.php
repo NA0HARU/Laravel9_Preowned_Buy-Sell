@@ -6,10 +6,10 @@
 @section('content')
     <div class="row page-titles">
         <div class="col-md-5 align-self-center">
-            <h3 class="text-themecolor">Blank Page</h3>
+            <h3 class="text-themecolor">Category List</h3>
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                <li class="breadcrumb-item active">Blank Page</li>
+                <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+                <li class="breadcrumb-item active">Category List</li>
             </ol>
         </div>
     </div>
@@ -19,7 +19,41 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h1>Category List</h1>
+                    <h4 class="card-title">Category List</h4>
+                    <h6 class="card-subtitle">Add class <code>.table</code></h6>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th style="width: 10px">Id</th>
+                                <th>Title</th>
+                                <th>Keywords</th>
+                                <th>Description</th>
+                                <th>Image</th>
+                                <th>Status</th>
+                                <th style="width: 40px">Edit</th>
+                                <th style="width: 40px">Delete</th>
+                                <th style="width: 40px">Show</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($data as $rs)
+                            <tr>
+                                <td>{{$rs->id}}</td>
+                                <td>{{$rs->title}}</td>
+                                <td>{{$rs->keywords}}</td>
+                                <td>{{$rs->description}}</td>
+                                <td>{{$rs->image}}</td>
+                                <td>{{$rs->status}}</td>
+                                <td><a href="/admin/category/edit{{$rs->id}}"class="btn btn-primary btn-sm">Edit</a></td>
+                                <td><a href="/admin/category/Delete{{$rs->id}}"class="btn btn-danger btn-sm">Delete</a></td>
+                                <td><a href="/admin/category/Show{{$rs->id}}"class="btn btn-success btn-sm">Show</a></td>
+                            </tr>
+                            <button class="btn btn-primary btn-sm">Small</button>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
