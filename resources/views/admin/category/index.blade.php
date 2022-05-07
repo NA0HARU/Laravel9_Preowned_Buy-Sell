@@ -19,8 +19,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Category List</h4>
-                    <h6 class="card-subtitle">Add class <code>.table</code></h6>
+                    <a href="/admin/category/create" class="btn btn-primary btn-md">Add Category</a>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -49,7 +48,6 @@
                                 <td><a href="/admin/category/Delete/{{$rs->id}}"class="btn btn-danger btn-sm">Delete</a></td>
                                 <td><a href="/admin/category/Show/{{$rs->id}}"class="btn btn-success btn-sm">Show</a></td>
                             </tr>
-                            <button class="btn btn-primary btn-sm">Small</button>
                             @endforeach
                             </tbody>
                         </table>

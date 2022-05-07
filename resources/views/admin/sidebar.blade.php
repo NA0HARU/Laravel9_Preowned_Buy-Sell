@@ -7,20 +7,52 @@
         <!-- Sidebar navigation-->
         <nav class="sidebar-nav">
             <ul id="sidebarnav">
-                <li> <a class="waves-effect waves-dark" href="index.html" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard</span></a>
+                <li> <a class="waves-effect waves-dark" href="/admin" aria-expanded="false"><i class="fa fa-dashboard"></i><span class="hide-menu">Dashboard</span></a>
                 </li>
-                <li> <a class="waves-effect waves-dark" href="pages-profile.html" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu">Profile</span></a>
+                <li class="menu-item open">
+                    <a href="javascript:void(0);" class="menu-link menu-toggle"><i class="fa fa-shopping-cart"></i><span class="hide-menu">
+                            Order</span>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a href="pages-account-settings-account.html" class="menu-link">
+                                <div data-i18n="New Orders">New Orders</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="pages-account-settings-notifications.html" class="menu-link">
+                                <div data-i18n="Accepted Orders">Accepted Orders</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="pages-account-settings-connections.html" class="menu-link">
+                                <div data-i18n="Shipping Orders">Shipping Orders</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="pages-account-settings-connections.html" class="menu-link">
+                                <div data-i18n="Completed Orders">Completed Orders</div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li> <a class="waves-effect waves-dark" href="table-basic.html" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Tables</span></a>
+                <li> <a class="waves-effect waves-dark" href="/admin/category" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Category</span></a>
                 </li>
-                <li> <a class="waves-effect waves-dark" href="icon-fontawesome.html" aria-expanded="false"><i class="fa fa-smile-o"></i><span class="hide-menu">Icons</span></a>
+                <li> <a class="waves-effect waves-dark" href="/admin/product" aria-expanded="false"><i class="fa fa-product-hunt"></i><span class="hide-menu">Products</span></a>
                 </li>
-                <li> <a class="waves-effect waves-dark" href="map-google.html" aria-expanded="false"><i class="fa fa-globe"></i><span class="hide-menu">Map</span></a>
+                <li> <a class="waves-effect waves-dark" href="/admin/comment" aria-expanded="false"><i class="fa fa-comments"></i><span class="hide-menu">Comments</span></a>
                 </li>
-                <li> <a class="waves-effect waves-dark" href="pages-blank.html" aria-expanded="false"><i class="fa fa-bookmark-o"></i><span class="hide-menu">Blank</span></a>
+                <li> <a class="waves-effect waves-dark" href="/admin/faq" aria-expanded="false"><i class="fa fa-bookmark-o"></i><span class="hide-menu">FAQ</span></a>
                 </li>
-                <li> <a class="waves-effect waves-dark" href="pages-error-404.html" aria-expanded="false"><i class="fa fa-question-circle"></i><span class="hide-menu">404</span></a>
+                <li> <a class="waves-effect waves-dark" href="/admin/messages" aria-expanded="false"><i class="fa fa-comment"></i><span class="hide-menu">Messages</span></a>
                 </li>
+                <li> <a class="waves-effect waves-dark" href="/admin/users" aria-expanded="false"><i class="fa fa-address-book"></i><span class="hide-menu">Users</span></a>
+                </li>
+                <li> <a class="waves-effect waves-dark" href="/admin/social" aria-expanded="false"><i class="fa fa-globe"></i><span class="hide-menu">Social</span></a>
+                </li>
+                <li> <a class="waves-effect waves-dark" href="/admin/settings" aria-expanded="false"><i class="fa fa-cogs"></i><span class="hide-menu">Settings</span></a>
+                </li>
+
             </ul>
         </nav>
         <!-- End Sidebar navigation -->
