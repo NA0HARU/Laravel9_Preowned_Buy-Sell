@@ -42,7 +42,12 @@
                                 <td>{{$rs->title}}</td>
                                 <td>{{$rs->keywords}}</td>
                                 <td>{{$rs->description}}</td>
-                                <td>{{$rs->image}}</td>
+                                <td>
+                                    @if ($rs->image)
+                                        <img src="{{Storage::url($rs->image)}}" style="height:40px">
+                                    @endif
+
+                                </td>
                                 <td>{{$rs->status}}</td>
                                 <td><a href="{{route('admin.category.edit',['id'=>$rs->id])}}"class="btn btn-primary btn-sm">Edit</a></td>
                                 <td><a href="{{route('admin.category.destroy',['id'=>$rs->id])}}"class="btn btn-danger btn-sm"onclick="return confirm('Deleting !! Are you Sure ?')">Delete</a></td>
