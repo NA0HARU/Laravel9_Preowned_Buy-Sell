@@ -1,9 +1,10 @@
 <?php
 
+use App\Http\Controllers\AdminPanel\CategoryController as AdminCategoryController;
+use App\Http\Controllers\AdminPanel\HomeController as AdminHomeController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminPanel\HomeController as AdminHomeController;
-use App\Http\Controllers\CategoryController as AdminCategoryController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
