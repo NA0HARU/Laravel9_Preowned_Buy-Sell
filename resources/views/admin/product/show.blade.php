@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <th scope="col" >Category Id</th>
-                <th scope="col">{{$data->category_id}}</th>
+                <th scope="col">{{\App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($data->category,$data->category->title)}}</th>
             </tr>
             <tr>
                 <th scope="col" >Detail</th>
